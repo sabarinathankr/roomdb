@@ -20,7 +20,7 @@ abstract class NoteDatabase : RoomDatabase() {
                 instance = Room.databaseBuilder(ctx.applicationContext, NoteDatabase::class.java,
                     "note_database")
                     .fallbackToDestructiveMigration()
-                    .addCallback(roomCallback)
+                    /*.addCallback(roomCallback)*/
                     .build()
 
             return instance!!
